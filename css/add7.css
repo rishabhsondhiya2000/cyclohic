@@ -1,0 +1,166 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  *:focus{
+    outline: none;
+  }
+  
+
+  .section1{
+    display: flex;
+    margin-top: 2%;
+  }
+
+  .form1{
+    color: white;
+    margin-left: 5%;
+    width: 50%;
+  }
+  .form1 table{
+    width: 100%;
+  }
+  
+  .form1 input {
+    width: 80%;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 5px 2%;
+    letter-spacing: 1px;
+}
+  .message{
+    width: 50%;
+  }
+  .submit{
+    margin: 10px 0;
+    border: 1px white solid;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 4px 10px;
+    
+  }
+  .show{
+    border: 1px white solid;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 4px;
+    align-self: center;
+    box-shadow: 0px 0px 10px white;
+    
+  }
+  
+  .submit:hover{
+    box-shadow: 0 0 5px yellow;
+  }
+
+  .top{
+    color:rgb(243, 249, 12);
+    text-decoration: underline rgb(243, 249, 12) 3px;
+  }
+  #mobile{
+    display: none;
+  }
+  .heading{
+    width: 40%;
+  }
+
+  .labelForFile{
+    width: 70% !important;
+    box-shadow: 0px 0px 4px rgb(0, 255, 179)!important;
+    padding: 5px 0px !important;
+  }
+  
+  .labelForFile:hover{
+    box-shadow: 0px 0px 8px rgb(0, 255, 179)!important;
+  }
+
+  @media only screen and (max-width:1200px){
+    .top {
+      font-size: 25px;
+     }
+     .heading h2{
+       font-size: 20px;
+     }
+     .form1 input {
+      font-size: 13px;
+      letter-spacing: 1px;
+     }
+  }
+
+  @media only screen and (max-width:1000px){
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+     }
+     .form1 {
+        margin-left: 0;
+        width: 90%;
+        text-align: center;
+     }
+     .message {
+      width: 100%;
+      text-align: center;
+     }
+     .heading{
+       width: 35%;
+     }
+     #pass{
+       width: 75%;
+     }
+  }
+
+  @media only screen and (max-width:600px){
+    .form1 {
+      width: 90%;
+     }
+     .top {
+      font-size: 20px;
+     }
+     .heading h2{
+       font-size: 15px;
+     }
+     .form1 input {
+      font-size: 12px;
+     }
+     .submit {
+      font-size: 15px;
+     }
+     .section1{
+      padding: 10px 0;
+    }
+  }
+
+  @media only screen and (max-width:480px){
+    #desktop{
+      display: none;
+    }
+    .heading h2{
+      font-size: 16px;
+    }
+    .form1 input {
+      font-size: 12px;
+     }
+    #mobile{
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .top{
+      margin-bottom: 15px;
+    }
+    .labelForFile{
+      padding: 0px 5px !important;
+    }
+    
+  }

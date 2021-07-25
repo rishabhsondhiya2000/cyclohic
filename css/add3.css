@@ -1,0 +1,240 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  *:focus{
+    outline: none;
+  }
+  .left{
+    width: 50%;
+  }
+  .google{
+    text-decoration: none;
+  }
+  #customBtn {
+    display: inline-block;
+    background: white;
+    color: #444;
+    width: 190px;
+    border-radius: 5px;
+    border: thin solid #888;
+    box-shadow: 1px 1px 1px grey;
+    white-space: nowrap;
+  }
+  #customBtn:hover {
+    cursor: pointer;
+  }
+  span.label {
+    font-family: serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  span.icon {
+    background: url('../images/google.png') transparent 5px 50% no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+    width: 42px;
+    height: 42px;
+  }
+  span.buttonText {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 42px;
+    padding-right: 42px;
+    font-size: 14px;
+    font-weight: bold;
+    /* Use the Roboto font that is loaded in the <head> */
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .section1{
+    display: flex;
+    margin-top: 2%;
+  }
+
+  .form1 {
+    color: white;
+    margin-left: 5%;
+    width: 100%;
+    text-align: center;
+    background: #42424240;
+    border-radius: 10px;
+  }
+  .form1 table{
+    width: 100%;
+  }
+  
+  .form1 input,select {
+    width: 90%;
+    border-radius: 20px;
+    margin: 10px 0;
+    padding: 10px 2%;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+select option{
+  background-color: #f1fbff;
+  color: rgb(0 0 0);
+  border-radius: 10px;
+  font-weight: 600;
+}
+  .message{
+    width: 50%;
+    text-align: center;
+  }
+  .submit{
+    margin: 10px 0;
+    border: 1px white solid;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 19px;
+    cursor: pointer;
+    padding: 4px 10px;
+    width: 40% !important;
+    
+  }
+  .show{
+    border: 1px white solid;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px 4px;
+    align-self: center;
+    box-shadow: 0px 0px 10px white;
+    
+  }
+  
+  .submit:hover{
+    box-shadow: 0 0 10px yellow;
+  }
+  .alert{
+    background-color: red;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+  }
+  .top{
+    color:rgb(243, 249, 12);
+    text-decoration: underline rgb(243, 249, 12) 3px;
+    margin: 20px 0;
+  }
+  .top a{
+    color:rgb(12, 154, 249);
+    text-decoration: none;
+  }
+  #mobile{
+    display: none;
+  }
+  .heading{
+    width: 40%;
+  }
+
+  .labelForFile{
+    width: 70% !important;
+    box-shadow: 0px 0px 4px rgb(0, 255, 179)!important;
+    padding: 5px 0px !important;
+  }
+  
+  .labelForFile:hover{
+    box-shadow: 0px 0px 8px rgb(0, 255, 179)!important;
+  }
+  #pass{
+    width: 81% !important;
+  }
+
+  @media only screen and (max-width:1200px){
+    .top {
+      font-size: 25px;
+     }
+     .heading h2{
+       font-size: 20px;
+     }
+     .form1 input {
+      font-size: 14px;
+      letter-spacing: 1px;
+     }
+  }
+
+  @media only screen and (max-width:1000px){
+    .section1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+     }
+     .left{
+      width: 100%;
+    }
+     .form1 {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+     }
+     .message {
+      width: 100%;
+      text-align: center;
+     }
+     .heading{
+       width: 35%;
+     }
+     #pass{
+       width: 75% !important;
+     }
+  }
+
+  @media only screen and (max-width:600px){
+    .form1 {
+      width: 90%;
+     }
+     .top {
+      font-size: 20px;
+     }
+     .heading h2{
+       font-size: 15px;
+     }
+     .form1 input {
+      font-size: 12px;
+     }
+     .submit {
+      font-size: 15px;
+     }
+     .section1{
+      padding: 10px 0;
+    }
+  }
+
+  @media only screen and (max-width:480px){
+    #desktop{
+      display: none;
+    }
+    .heading h2{
+      font-size: 16px;
+    }
+    .form1 input {
+      font-size: 12px;
+     }
+    #mobile{
+      display: block;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .top{
+      margin-bottom: 15px;
+    }
+    .labelForFile{
+      padding: 0px 5px !important;
+    }
+    .alert{
+      font-size: 10px;
+    }
+    
+  }

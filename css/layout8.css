@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+  }
+  *:focus{
+    outline: none;
+  }
+  
+  body{ 
+    background: rgb(0 0 0 / 65%) url(../images/bgd2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+  }
+  
+  /* Nav-bar desktop Starts*/
+  .navigation{
+    background-color: rgba(0, 0, 0, 0.842);
+    display: flex;
+    position:sticky;
+    top: 0;
+    box-shadow: 0px 1px 8px white;
+    transition: all 1s ease-in-out;
+  }
+  .nav-bar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    transition: all 5ms;
+    width: 100%;
+  }
+  .menu{
+    width: 95%;
+    display: flex;
+    justify-content:flex-end;
+    padding-right: 5%;
+  }
+  .menu a{
+    color: white;
+    font-size: 19px;
+    border: 0;
+    cursor: pointer;
+    margin: 0 20px;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+  }
+  .menu a:hover{
+    color: rgb(124, 124, 124);
+    text-decoration: underline 3px white;
+  }
+  .active{
+    color: rgb(124, 124, 124)  !important;
+    text-decoration: underline 3px white !important;
+  }
+
+  .logo{
+    width: 5%;
+  }
+  .logo a img{
+    box-shadow:0 0 20px white;
+    width: 5vw;
+    height: 5vw;
+    background-size: cover;
+    border-radius: 50%;
+    
+  }
+  .burger button{
+    background: transparent;
+    color: white;
+    border: 0;
+    padding:0 10px;
+    font-size: 17px;
+  }
+  .burger{
+    height: 100%;
+    display: none;
+  }
+  .mobile_nav {
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    width: 0vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 500ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    z-index: 1;
+}
+
+.mobile_nav ul li {
+  margin: 4vh 0;
+  color: white;
+  list-style: circle;
+}
+
+.mobile_nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.menu_head{
+  color:rgb(243, 249, 12);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+
+  /* Nav-bar desktop Ends*/
+
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+  
+@media only screen and (max-width:768px){
+  .footer p{
+    font-size: 12px;
+  }
+  .burger{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+  }
+  .menu{
+    display: none !important;
+    
+  }
+  .navigation{
+    align-items: center;
+  }
+  
+  .logo{
+    width: 100% !important;
+    text-align: center;
+    padding-top: 1vh;
+  }
+  .logo a img{
+    height: 8vw;
+    width: 8vw;
+  }
+  body{ 
+    background: rgb(0 0 0 / 60%) url(../images/bgm1.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    background-blend-mode: soft-light;
+  }
+  
+  
+  
+}
+
+@media only screen and (max-width:480px){
+ 
+  .logo a img{
+    height: 10vw;
+    width: 10vw;
+  }
+  
+   
+  
+  
+}

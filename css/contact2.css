@@ -1,0 +1,51 @@
+*{
+    margin:0;
+    padding: 0;
+    
+  }
+  
+
+  .details{
+    margin-top: 10vh; 
+    margin-left: 20px;
+    min-height: 75vh;
+  }
+
+  .details h1{ 
+    color: rgb(217, 255, 4);
+    font-family: 'Roboto', sans-serif;
+    text-decoration: underline;
+    font-weight: 400;
+  }
+
+  .details h2{
+      color: white;
+      font-family: 'Quicksand', sans-serif;
+      font-weight: 200;
+  }
+
+  .details span{
+    color: rgb(217, 255, 4);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+  }
+
+  
+
+  @media only screen and (max-width:1200px){
+    .details h1{ 
+      font-size: 25px;
+    }
+    .details h2,span{ 
+      font-size: 22px;
+    }
+  }
+
+  @media only screen and (max-width:468px){
+    .details h1{ 
+      font-size: 18px;
+    }
+    .details h2,span{ 
+      font-size: 15px;
+    }
+  }
